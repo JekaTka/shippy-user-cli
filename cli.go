@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	pb "github.com/JekaTka/microservices-in-golang/user-service/proto/user"
+	pb "github.com/JekaTka/shippy-user-service/proto/user"
 	"github.com/micro/cli"
 	"github.com/micro/go-micro"
 	microclient "github.com/micro/go-micro/client"
