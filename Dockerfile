@@ -16,6 +16,6 @@ RUN mkdir /app
 WORKDIR /app
 COPY --from=builder /go/src/github.com/JekaTka/shippy-user-cli .
 
-ENTRYPOINT ["./user-cli"]
+ENTRYPOINT ["./shippy-user-cli"]
 
-CMD ["./user-cli"]
+CMD ["./shippy-user-cli"]
