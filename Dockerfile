@@ -1,10 +1,11 @@
 FROM golang:latest as builder
 
+ENV GO111MODULE=on
 WORKDIR /go/src/github.com/JekaTka/shippy-user-cli
 
 COPY . .
 
-RUN go get
+# RUN go get
 RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo .
 
 
